@@ -1,12 +1,43 @@
-# React + Vite
+# پروژه فروشگاه بدنسازی
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+طراحی شده با ریکت و شامل امکاناتی مثل مد شب و روز و صفحه جزیات و سبد خرید و صفحه اصلی و صفحه محصولات است 
 
-Currently, two official plugins are available:
+## پیش‌نمایش
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![پیش‌نمایش پروژه](./src/preview.png)
 
-## Expanding the ESLint configuration
+## ویژگی‌ها
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- مد شب و روز
+- صفحه اصلی
+- لیست محصولات
+-  صفحه جزیات 
+-سبد خرید s
+...
+for run 
+npm i 
+npm run dev or npm start
+ساخته شده توسط حسام اپیک
+////////////////////////////
+# Fitness Store Project
+
+Designed with Racket and includes features such as day and night mode, details page, shopping cart, home page and product page 
+
+## Preview
+
+![Project Preview](./src/preview.png)
+
+## Features
+
+- Day and night mode
+- Home page
+- Product list
+- Details page s
+- Shopping cart 
+...
+
+for run 
+npm i 
+npm run dev or npm start
+
+create by hesam Epiks

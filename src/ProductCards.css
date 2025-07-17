@@ -1,0 +1,108 @@
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.8rem;
+    padding: 2rem;
+    background-color: #01081d;
+    min-height: 80vh;
+  }
+  
+  .product-card {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    padding: 1.4rem 1.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+  }
+  
+  .product-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+  }
+  
+  .product-image {
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    background-color: #f0f0f3;
+  }
+  
+  .product-name {
+    font-size: 1.3rem;
+    color: #5a31f4;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    font-weight: 700;
+  }
+  
+  .product-description {
+    font-size: 0.9rem;
+    color: #555;
+    text-align: center;
+    flex-grow: 1;
+    line-height: 1.4;
+    margin-bottom: 1rem;
+  }
+  
+  .product-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+  }
+  
+  .product-price {
+    color: #8b5cf6;
+    font-weight: 700;
+    font-size: 1.1rem;
+  }
+  
+  .product-button {
+    background-color: #8b5cf6;
+    border: none;
+    color: white;
+    padding: 0.45rem 1rem;
+    border-radius: 0.6rem;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+  }
+  
+  .product-button:hover {
+    background-color: #7c3aed;
+  }
+  .product-button {
+    background-color: #8b5cf6;
+    border: none;
+    color: white;
+    padding: 0.45rem 1rem;
+    border-radius: 0.6rem;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .product-button:hover {
+    background-color: #7c3aed;
+    transform: translateY(-2px);
+  }
+  
+  .product-button:active {
+    transform: translateY(0);
+    background-color: #6b21a8;
+  }
+  
+  .product-button svg {
+    width: 20px;
+    height: 20px;
+  }
+  

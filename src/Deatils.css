@@ -1,0 +1,109 @@
+.prd-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 40px;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #1f1b2e, #2d0d4b);
+    color: #fff;
+    font-family: 'Vazirmatn', sans-serif;
+  }
+  
+  .prd-img {
+    flex: 1;
+    min-width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .prd-photo {
+    width: 100%;
+    max-width: 480px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease;
+    background: #fff;
+  }
+  .prd-photo:hover {
+    transform: scale(1.05);
+  }
+  
+  .prd-info {
+    flex: 1;
+    min-width: 350px;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(12px);
+    border-radius: 18px;
+    padding: 50px;
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5);
+    animation: slideUp 1s ease-out;
+  }
+  
+  .prd-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #e0e7ff;
+    border-bottom: 2px solid #c084fc;
+    margin-bottom: 20px;
+  }
+  
+  .prd-desc {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #d1d5db;
+    margin-bottom: 25px;
+  }
+  
+  .prd-features {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 25px;
+  }
+  .prd-features li {
+    margin-bottom: 8px;
+    padding-left: 1rem;
+    position: relative;
+  }
+  .prd-features li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    color: #22c55e;
+  }
+  
+  .prd-price {
+    font-size: 1.5rem;
+    color: #fde047;
+    font-weight: bold;
+    border: 1px dashed #fde047;
+    padding: 10px 20px;
+    display: inline-block;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .prd-buy {
+    background: linear-gradient(45deg, #9333ea, #7c3aed);
+    color: #fff;
+    border: none;
+    padding: 16px 24px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    margin: 0px 19px 0px 0px;
+    height: 64px;
+  }
+  .prd-buy:hover {
+    transform: translateY(-3px);
+    background: linear
+  
+        
+
+        }

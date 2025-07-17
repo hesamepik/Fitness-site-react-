@@ -1,0 +1,149 @@
+/* کل کانتینر */
+.containercc {
+    max-width: 1140px;
+    margin: 4rem auto;
+    padding: 0 2rem;
+    background: #ffffff;
+    border-radius: 24px;
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12);
+    font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #222222;
+  }
+  
+  /* Wrapper کارت‌ها به صورت گرید ریسپانسیو */
+  .cardWrappercc {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 2.8rem;
+    padding: 2.5rem 0;
+  }
+  
+  /* کارت محصول */
+  .cardcc {
+    background: #fafafa;
+    border-radius: 20px;
+    box-shadow:
+      0 12px 24px rgba(0, 0, 0, 0.06);
+    padding: 2rem 1.8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: box-shadow 0.4s ease, transform 0.4s ease;
+    cursor: pointer;
+    border: 1.5px solid transparent;
+  }
+  
+  .cardcc:hover {
+    transform: translateY(-10px);
+    box-shadow:
+      0 20px 40px rgba(124, 58, 237, 0.3);
+    border-color: #7c3aed;
+  }
+  
+  /* تصویر محصول */
+  .cardcc img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: contain;
+    border-radius: 16px;
+    margin-bottom: 1.5rem;
+    background: linear-gradient(135deg, #a18cd1 0%, #fbc2eb 100%);
+    box-shadow: inset 0 0 25px rgba(255, 255, 255, 0.45);
+    transition: transform 0.4s ease;
+  }
+  
+  .cardcc:hover img {
+    transform: scale(1.05);
+  }
+  
+  /* عنوان محصول */
+  .cardcc p:first-of-type {
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 0.8rem;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
+  }
+  
+  /* قیمت */
+  .cardcc p:last-of-type {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: 0.06em;
+    margin-top: auto;
+    user-select: none;
+  }
+  .card p {
+    color: #fff;
+  }
+  
+  /* دکمه سابمیت */
+  .submitSectioncc {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .submitSectioncc button {
+    background: linear-gradient(90deg, #7c3aed, #a259ff);
+    color: #fff;
+    font-weight: 800;
+    font-size: 1.3rem;
+    padding: 1.2rem 4rem;
+    border-radius: 40px;
+    border: none;
+    box-shadow:
+      0 8px 30px rgba(124, 58, 237, 0.6);
+    cursor: pointer;
+    transition: all 0.35s ease;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    filter: drop-shadow(0 4px 8px rgba(124, 58, 237, 0.4));
+  }
+  
+  .submitSectioncc button:hover {
+    background: linear-gradient(90deg, #a259ff, #7c3aed);
+    box-shadow:
+      0 12px 48px rgba(162, 89, 255, 0.85);
+    transform: scale(1.08);
+  }
+  
+  .submitSectioncc button {
+    background: rgba(124, 58, 237, 0.15); /* پس‌زمینه شفاف بنفش روشن */
+    color: #7c3aed; /* متن بنفش پررنگ */
+    font-weight: 800;
+    font-size: 1.3rem;
+    padding: 1.2rem 4rem;
+    border-radius: 40px;
+    border: 2px solid #7c3aed;
+    box-shadow: 0 4px 15px rgba(124, 58, 237, 0.3);
+    cursor: pointer;
+    transition: all 0.35s ease;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    backdrop-filter: blur(10px); 
+    margin: -87px 0px 15px 0px;
+  }
+  
+  .submitSectioncc button:hover {
+    background: #7c3aed; /* رنگ بنفش پررنگ */
+    color: #fff; /* متن سفید */
+    box-shadow: 0 12px 40px rgba(124, 58, 237, 0.7);
+    transform: scale(1.1);
+    border-color: #a259ff;
+  }
+  
+  /* Responsive tweaks */
+  @media (max-width: 600px) {
+    .cardWrapper {
+      grid-template-columns: 1fr;
+    }
+    .submitSection button {
+      width: 100%;
+      padding: 1.3rem 0;
+    }
+  }
+  

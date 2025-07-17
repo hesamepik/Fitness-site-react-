@@ -1,0 +1,397 @@
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn&display=swap');
+
+/* رنگ‌ها برای حالت لایت */
+:root {
+  --bg-color-light: #ffffff;
+  --text-color-light: #121212;
+  --accent-color-light: #8f52ff;
+  --section-bg-light: #f9f9f9;
+  --button-bg-light: #8f52ff;
+  --button-text-light: #ffffff;
+}
+
+/* رنگ‌ها برای حالت دارک */
+:root {
+  --bg-color-dark: #0f0f1d;
+  --text-color-dark: #e0e0f0;
+  --accent-color-dark: #8f52ff;
+  --section-bg-dark: #1c1c3b;
+  --button-bg-dark: #8f52ff;
+  --button-text-dark: #ffffff;
+}
+
+/* پیش‌فرض بدن و حالت دارک */
+body {
+  margin: 0;
+  font-family: 'Vazirmatn', sans-serif;
+  direction: rtl;
+  background-color: var(--bg-color-dark);
+  color: var(--text-color-dark);
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+/* وقتی حالت لایت فعال باشه */
+body.light-mode {
+  background-color: var(--bg-color-light);
+  color: var(--text-color-light);
+}
+
+/* هدر */
+.fitness-header {
+  padding: 0 2rem;
+  background: transparent;
+}
+
+/* ناوبری */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-color-dark);
+  transition: color 0.3s ease;
+}
+
+/* وقتی لایت مود */
+body.light-mode .logo {
+  color: var(--text-color-light);
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links li {
+  font-weight: 600;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--text-color-dark);
+  transition: color 0.3s ease;
+}
+
+body.light-mode .nav-links a {
+  color: var(--text-color-light);
+}
+
+.nav-links a:hover {
+  color: var(--accent-color-dark);
+}
+
+body.light-mode .nav-links a:hover {
+  color: var(--accent-color-light);
+}
+
+.cart-link {
+  position: relative;
+}
+
+.cartCount {
+  position: absolute;
+  top: -8px;
+  right: -12px;
+  background-color: #ef4444;
+  color: white;
+  font-size: 0.75rem;
+  padding: 2px 6px;
+  border-radius: 50%;
+  font-weight: 700;
+  min-width: 20px;
+  text-align: center;
+  line-height: 1.2;
+}
+
+/* دکمه ورود */
+.login-btn {
+  background-color: var(--button-bg-dark);
+  color: var(--button-text-dark);
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 700;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 12px rgba(143, 82, 255, 0.5);
+}
+
+.login-btn:hover {
+  background-color: #a373ff;
+}
+
+body.light-mode .login-btn {
+  background-color: var(--button-bg-light);
+  color: var(--button-text-light);
+  box-shadow: 0 4px 12px rgba(143, 82, 255, 0.4);
+}
+
+body.light-mode .login-btn:hover {
+  background-color: #a373ff;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4rem 0;
+  gap: 2rem;
+  background-color: #0f0f1d;
+  transition: background-color 0.3s ease;
+}
+
+body.light-mode .hero {
+  background-color: var(--section-bg-light);
+}
+
+.hero-content {
+  max-width: 50%;
+}
+
+.hero-content h1 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+  color: var(--text-color-dark);
+  font-weight: 700;
+  transition: color 0.3s ease;
+}
+
+body.light-mode .hero-content h1 {
+  color: var(--text-color-light);
+}
+
+.hero-content p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  color: #ccc;
+  transition: color 0.3s ease;
+}
+
+body.light-mode .hero-content p {
+  color: #555;
+}
+
+.stats {
+  display: flex;
+  gap: 2.5rem;
+}
+
+.stats span {
+  font-size: 1.6rem;
+  color: var(--accent-color-dark);
+  font-weight: 700;
+  transition: color 0.3s ease;
+}
+
+body.light-mode .stats span {
+  color: var(--accent-color-light);
+}
+
+/* Hero Image */
+.hero-image {
+  width: 500px;
+  height: 500px;
+  background: linear-gradient(135deg, var(--accent-color-dark), #3d2c7e);
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  box-shadow: 0 0 20px rgba(143, 82, 255, 0.3);
+  transition: box-shadow 0.3s ease, background 0.3s ease;
+}
+
+body.light-mode .hero-image {
+  background: linear-gradient(135deg, var(--accent-color-light), #5e3cbf);
+  box-shadow: 0 0 25px rgba(111, 66, 193, 0.4);
+}
+
+.hero-image img {
+  width: 88%;
+  height: 101%;
+  object-fit: cover;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+.hero-image img:hover {
+  transform: scale(1.05);
+}
+
+/* بنر تصویر */
+.imgban img {
+  width: 100%;
+  top: 124px;
+}
+
+/* Footer */
+.ftr {
+  background-color: var(--section-bg-dark);
+  color: var(--text-color-dark);
+  margin-top: 3.5rem;
+  box-shadow: inset 0 5px 15px rgba(124, 58, 237, 0.4);
+  padding-bottom: 1rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.light-mode .ftr {
+  background-color: var(--section-bg-light);
+  color: var(--text-color-light);
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1e293b;
+  padding: 1rem 2rem;
+  flex-wrap: wrap;
+  font-size: 0.9rem;
+  border-bottom: 1px solid #3b4262;
+  color: #d1d5db;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.light-mode .top {
+  background-color: var(--section-bg-light);
+  color: var(--text-color-light);
+}
+
+.icons {
+  display: flex;
+  gap: 1.25rem;
+  font-size: 1.4rem;
+  color: var(--accent-color-dark);
+  transition: color 0.3s ease;
+}
+
+body.light-mode .icons {
+  color: var(--accent-color-light);
+}
+
+.icons:hover {
+  color: #c4b5fd;
+  cursor: pointer;
+}
+
+.tel {
+  font-weight: 300;
+  font-size: 1rem;
+  color: inherit;
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background: linear-gradient(135deg, #7c3aed, #000000);
+  padding: 2.5rem 2rem;
+  color: white;
+  gap: 2rem;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+body.light-mode .main {
+  background-color: var(--section-bg-light);
+  color: var(--text-color-light);
+}
+
+.col {
+  min-width: 180px;
+  margin-bottom: 1.2rem;
+  flex: 1 1 180px;
+}
+
+.col h4 {
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--accent-color-dark);
+  transition: color 0.3s ease;
+}
+
+body.light-mode .col h4 {
+  color: var(--accent-color-light);
+}
+
+.col li {
+  margin-bottom: 0.65rem;
+  font-size: 1rem;
+  color: inherit;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.col li:hover {
+  color: var(--accent-color-dark);
+}
+
+body.light-mode .col li:hover {
+  color: var(--accent-color-light);
+}
+
+.logos {
+  display: flex;
+  gap: 1.2rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logos img {
+  width: 80px;
+  background: white;
+  padding: 0.6rem;
+  border-radius: 0.6rem;
+  box-shadow: 0 4px 12px rgba(124, 58, 237, 0.5);
+  transition: transform 0.3s ease;
+}
+
+.logos img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(124, 58, 237, 0.8);
+}
+
+.copy {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.85rem;
+  background-color: #1e293b;
+  color: #a5b4fc;
+  user-select: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.light-mode .copy {
+  background-color: var(--section-bg-light);
+  color: var(--text-color-light);
+}
+
+/* دکمه تغییر تم */
+.theme-toggle-btn {
+  background: none;
+  border: none;
+  font-size: 1.6rem;
+  margin-right: 1rem;
+  cursor: pointer;
+  color: var(--text-color-dark);
+  transition: color 0.3s ease;
+}
+
+body.light-mode .theme-toggle-btn {
+  color: var(--text-color-light);
+}
+
+.theme-toggle-btn:hover {
+  color: var(--accent-color-dark);
+}
+
+body.light-mode .theme-toggle-btn:hover {
+  color: var(--accent-color-light);
+}
